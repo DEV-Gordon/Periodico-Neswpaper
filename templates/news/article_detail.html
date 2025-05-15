@@ -8,7 +8,8 @@
         <header class="mb-8">
             <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ article.title }}</h1>
             <div class="flex items-center text-gray-600 text-sm mb-4">
-                <span class="mr-4">By {{ article.author.get_full_name|default:article.author.username }}</span>
+                <span class="mr-4">By {{ article.editor }}</span>
+                <span class="mr-4">Location {{ article.location }}</span>
                 <span>{{ article.created_at|date:"F j, Y" }}</span>
             </div>
             <div class="mb-6">
