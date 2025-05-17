@@ -1,5 +1,7 @@
 # Newspaper Website
 
+Integrantes: Carlos Zarate, Yeiser Pinto, Gisel Camargo, Sebastian Damian, Evelin Arrieta.
+
 A modern newspaper website built with Django and Tailwind CSS. Features include:
 - Category-based article organization
 - Featured articles
