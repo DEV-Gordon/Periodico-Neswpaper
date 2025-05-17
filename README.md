@@ -65,3 +65,20 @@ A modern newspaper website built with Django and Tailwind CSS. Features include:
 - `static/` - Static files (CSS, JS, images)
 - `media/` - Uploaded media files
 
+## Database Configuration
+
+This project uses **MySQL** as the database engine. Make sure you have a MySQL server running and a database named `newspaper` already created.
+
+To connect the Django project to your database, update the `settings.py` file with the following configuration:
+
+```python
+DATABASES = {
+ 'default': {
+     'ENGINE': 'django.db.backends.mysql',
+     'NAME': 'newspaper',      # Name of the database (schema)
+     'USER': 'root',           # MySQL username
+     'PASSWORD': 'zasca',      # MySQL password
+     'HOST': '127.0.0.1',      # Server address (can also be 'localhost')
+     'PORT': '3306',           # Default MySQL port
+ }
+}
